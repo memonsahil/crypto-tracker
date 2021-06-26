@@ -29,7 +29,8 @@ function App() {
   return (
     <div className="coin-app">
       <div className="coin-search">
-        <h1 className="coin-text">Search for a cryptocurrency</h1>
+        <h1 className="coin-text">Crypto Tracker</h1>
+        <h2 className="coin-source">Powered by CoinGecko</h2>
         <form>
           <input
             className="coin-input"

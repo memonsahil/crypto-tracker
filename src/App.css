@@ -1,12 +1,28 @@
-.App {
-  background-color: #194758;
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  src: url(./assets/fonts/RobotoCondensed-Bold.ttf);
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: "RobotoCondensed-Regular";
+  src: url(./assets/fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: "RobotoCondensed-Light";
+  src: url(./assets/fonts/RobotoCondensed-Light.ttf);
+}
+
+.coin-text {
+  font-family: "RobotoCondensed-Bold";
+  color: #23282e;
+  font-size: 6vh;
+  text-align: center;
+}
+
+.coin-source {
+  font-family: "RobotoCondensed-Light";
+  color: #23282e;
+  font-size: 3vh;
+  text-align: center;
 }
