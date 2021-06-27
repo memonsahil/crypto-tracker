@@ -28,9 +28,9 @@ function App() {
 
   return (
     <div className="coin-app">
+      <h1 className="coin-text">Crypto Tracker</h1>
+      <h2 className="coin-source">Powered by CoinGecko</h2>
       <div className="coin-search">
-        <h1 className="coin-text">Crypto Tracker</h1>
-        <h2 className="coin-source">Powered by CoinGecko</h2>
         <form>
           <input
             className="coin-input"
@@ -39,21 +39,23 @@ function App() {
             onChange={handleChange}
           />
         </form>
+        <div className="coin-results">
+          {filteredCoins.map((coin) => {
+            return (
+              <Coin
+                key={coin.id}
+                image={coin.image}
+                name={coin.name}
+                symbol={coin.symbol}
+                price={coin.current_price}
+                priceChange={coin.price_change_percentage_24h}
+                volume={coin.total_volume}
+                marketCap={coin.market_cap}
+              />
+            );
+          })}
+        </div>
       </div>
-      {filteredCoins.map((coin) => {
-        return (
-          <Coin
-            key={coin.id}
-            image={coin.image}
-            name={coin.name}
-            symbol={coin.symbol}
-            price={coin.current_price}
-            priceChange={coin.price_change_percentage_24h}
-            volume={coin.total_volume}
-            marketCap={coin.market_cap}
-          />
-        );
-      })}
     </div>
   );
 }

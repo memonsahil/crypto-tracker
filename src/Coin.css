@@ -13,21 +13,14 @@
   src: url(./assets/fonts/RobotoCondensed-Light.ttf);
 }
 
-.coin-container {
-  display: flex;
-  justify-content: center;
-}
-
 .coin-row {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 90vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  padding-top: 0.75vh;
-  padding-bottom: 0.75vh;
-  border-bottom: 0.75vh solid #588982;
+  justify-content: space-evenly;
+  padding-left: 1.25vw;
+  padding-right: 1.25vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  border-bottom: 1vh solid #588982;
   border-left: 0.75vh solid #588982;
   border-right: 0.75vh solid #588982;
   background-color: #9fd8cb;
@@ -36,7 +29,7 @@
 .coin {
   display: flex;
   align-items: center;
-  width: 40vw;
+  width: 30vw;
 }
 
 .coin-image {
@@ -48,7 +41,7 @@
   flex: 1;
   font-family: "RobotoCondensed-Regular";
   color: #23282e;
-  font-size: 2.75vh;
+  font-size: 2.5vh;
   text-align: center;
 }
 
@@ -56,7 +49,7 @@
   flex: 1;
   font-family: "RobotoCondensed-Bold";
   color: #23282e;
-  font-size: 2.75vh;
+  font-size: 2.5vh;
   text-align: center;
   text-transform: uppercase;
 }
@@ -64,7 +57,7 @@
 .coin-data {
   display: flex;
   align-items: center;
-  width: 50vw;
+  width: 60vw;
 }
 
 .coin-price {
