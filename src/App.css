@@ -5,16 +5,15 @@
   text-align: center;
 }
 
-.coin-title .coin-source {
+.coin-title {
   font-family: "RobotoCondensed-Bold";
   color: #23282e;
-}
-
-.coin-title {
   font-size: 6vh;
 }
 
 .coin-source {
+  font-family: "RobotoCondensed-Light";
+  color: #23282e;
   font-size: 2vh;
   transform: translate(0vh, -5vh);
 }
@@ -45,8 +44,8 @@
   display: flex;
   justify-content: space-evenly;
   border-bottom: 1vh solid #588982;
-  border-left: 0.75vh solid #588982;
-  border-right: 0.75vh solid #588982;
+  border-left: 0.5vw solid #588982;
+  border-right: 0.5vw solid #588982;
   background-color: #79b9a2;
 }
 
@@ -66,14 +65,7 @@
 
 .coin-type-image,
 .coin-type-name,
-.coin-type-symbol {
-  flex: 1;
-  font-family: "RobotoCondensed-Regular";
-  color: #23282e;
-  font-size: 2.5vh;
-  text-align: center;
-}
-
+.coin-type-symbol,
 .coin-details-price,
 .coin-details-price,
 .coin-details-percent,
