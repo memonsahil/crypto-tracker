@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="coin-app">
-      <h1 className="coin-text">Crypto Tracker</h1>
+      <h1 className="coin-title">Crypto Tracker</h1>
       <h2 className="coin-source">Powered by CoinGecko</h2>
       <div className="coin-search">
         <form>
@@ -39,22 +39,33 @@ function App() {
             onChange={handleChange}
           />
         </form>
-        <div className="coin-results">
-          {filteredCoins.map((coin) => {
-            return (
-              <Coin
-                key={coin.id}
-                image={coin.image}
-                name={coin.name}
-                symbol={coin.symbol}
-                price={coin.current_price}
-                priceChange={coin.price_change_percentage_24h}
-                volume={coin.total_volume}
-                marketCap={coin.market_cap}
-              />
-            );
-          })}
+        <div className="coin-table">
+          <div className="coin-type">
+            <p className="coin-type-image">Image</p>
+            <p className="coin-type-name">Name</p>
+            <p className="coin-type-symbol">Symbol</p>
+          </div>
+          <div className="coin-details">
+            <p className="coin-details-price">Price</p>
+            <p className="coin-details-percent">Change (%)</p>
+            <p className="coin-details-volume">Volume</p>
+            <p className="coin-details-marketcap">Market Cap</p>
+          </div>
         </div>
+        {filteredCoins.map((coin) => {
+          return (
+            <Coin
+              key={coin.id}
+              image={coin.image}
+              name={coin.name}
+              symbol={coin.symbol}
+              price={coin.current_price}
+              priceChange={coin.price_change_percentage_24h}
+              volume={coin.total_volume}
+              marketCap={coin.market_cap}
+            />
+          );
+        })}
       </div>
     </div>
   );

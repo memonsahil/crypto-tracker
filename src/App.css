@@ -1,64 +1,87 @@
-@font-face {
-  font-family: "RobotoCondensed-Bold";
-  src: url(./assets/fonts/RobotoCondensed-Bold.ttf);
-}
-
-@font-face {
-  font-family: "RobotoCondensed-Regular";
-  src: url(./assets/fonts/RobotoCondensed-Regular.ttf);
-}
-
-@font-face {
-  font-family: "RobotoCondensed-Light";
-  src: url(./assets/fonts/RobotoCondensed-Light.ttf);
-}
-
 .coin-app {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.coin-text {
+.coin-title .coin-source {
   font-family: "RobotoCondensed-Bold";
   color: #23282e;
+}
+
+.coin-title {
   font-size: 6vh;
-  text-align: center;
 }
 
 .coin-source {
-  font-family: "RobotoCondensed-Light";
-  color: #23282e;
-  font-size: 3vh;
-  text-align: center;
+  font-size: 2vh;
   transform: translate(0vh, -5vh);
 }
 
 .coin-search {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 90vw;
   border: 0.75vh solid #588982;
-  border-radius: 2.25vh;
+  border-radius: 2.5vh;
   background-color: #588982;
   transform: translate(0vh, -5vh);
 }
 
 .coin-input {
-  height: 5vh;
+  height: 4vh;
   width: 20vw;
-  border: 0.75vh solid #588982;
+  border: 0.3vh solid #23282e;
   border-radius: 1.5vh;
-  background-color: #9fd8cb;
+  background-color: #dbdbdb;
   font-family: "RobotoCondensed-Regular";
   color: #23282e;
-  font-size: 3vh;
+  font-size: 2.5vh;
   padding-left: 0.75vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
 }
 
-.coin-results {
-  width: 90vw;
+.coin-table {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1vh solid #588982;
+  border-left: 0.75vh solid #588982;
+  border-right: 0.75vh solid #588982;
+  background-color: #79b9a2;
+}
+
+.coin-type,
+.coin-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coin-type {
+  width: 30vw;
+}
+
+.coin-details {
+  width: 60vw;
+}
+
+.coin-type-image,
+.coin-type-name,
+.coin-type-symbol {
+  flex: 1;
+  font-family: "RobotoCondensed-Regular";
+  color: #23282e;
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+.coin-details-price,
+.coin-details-price,
+.coin-details-percent,
+.coin-details-volume,
+.coin-details-marketcap {
+  flex: 1;
+  font-family: "RobotoCondensed-Regular";
+  color: #23282e;
+  font-size: 2.5vh;
+  text-align: center;
 }
