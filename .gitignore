@@ -6,4 +6,4 @@ node_modules
 package-lock.json
 
 # API
-./src/API.js
+src/API.js
