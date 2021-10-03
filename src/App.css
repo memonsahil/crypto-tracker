@@ -7,35 +7,41 @@
 
 .app-title {
   font-family: "RobotoCondensed-Bold";
-  color: #23282e;
-  font-size: 4rem;
+  color: #ffffff;
+  font-size: 3rem;
 }
 
 .app-source {
   font-family: "RobotoCondensed-Light";
-  color: #23282e;
-  font-size: 1.5rem;
-  transform: translate(0vh, -5vh);
+  color: #ffffff;
+  font-size: 1.25rem;
+  transform: translate(0rem, -2.75rem);
 }
 
-.app-search {
-  width: 90vw;
-  border: 0.75vh solid #588982;
-  border-radius: 2.5vh;
-  background-color: #588982;
-  transform: translate(0vh, -5vh);
+.app-context {
+  width: 110rem;
+  border-radius: 2.5rem;
+  background-color: #136f63;
+  transform: translate(0rem, -2rem);
 }
 
 .search-input {
-  height: 4vh;
-  width: 20vw;
-  border: 0.3vh solid #23282e;
-  border-radius: 1.25vh;
-  background-color: #dbdbdb;
+  height: 2.15rem;
+  width: 18rem;
+  border: 0.2rem solid #032b43;
+  border-radius: 1.25rem;
+  background-color: #075688;
   font-family: "RobotoCondensed-Regular";
-  color: #23282e;
+  color: #ffffff;
   font-size: 1.3rem;
   text-align: center;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
+  margin-top: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.app-loading-text {
+  font-family: "RobotoCondensed-Light";
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-top: 1.25rem;
 }

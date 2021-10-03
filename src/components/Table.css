@@ -1,0 +1,80 @@
+.react-table {
+  width: inherit;
+  background-color: #588982;
+  border: 0rem;
+}
+
+.react-table-rows-select {
+  height: 2.5rem;
+  width: 6rem;
+  background-color: #ffffff;
+  border: 0rem;
+  font-family: "RobotoCondensed-Light";
+  font-size: 1rem;
+}
+
+.react-table-pagination {
+  font-family: "RobotoCondensed-Light";
+  font-size: 1.25rem;
+  color: #ffffff;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.react-table-header {
+  background-color: #075688;
+  height: 4rem;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.react-table-data {
+  height: 3.5rem;
+  background-color: #1b9d8c;
+  font-family: "RobotoCondensed-Light";
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+.react-table-nav-buttons {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.react-table-nav-button {
+  background-color: #075688;
+  color: #ffffff;
+  border-radius: 2rem;
+  border: 0rem;
+  height: 2.5rem;
+  width: 3rem;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 1.25rem;
+}
+
+.react-table-nav-button-previous {
+  background-color: #075688;
+  color: #ffffff;
+  border-radius: 2rem;
+  border: 0rem;
+  height: 2.5rem;
+  width: 3rem;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 1.25rem;
+  margin-left: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.react-table-nav-button-next {
+  background-color: #075688;
+  color: #ffffff;
+  border-radius: 2rem;
+  border: 0rem;
+  height: 2.5rem;
+  width: 3rem;
+  font-family: "RobotoCondensed-Regular";
+  font-size: 1.25rem;
+  margin-right: 1.5rem;
+  margin-left: 0.75rem;
+}
