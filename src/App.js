@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import axois from "axios";
-import API_KEY from "./API";
+//import API_KEY from "./API";
 import "./App.css";
 import ScaleLoader from "react-spinners/ScaleLoader";
 import Table from "./components/Table.js";
@@ -12,6 +12,7 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
+    /* Get a Nomics API key and replace it below with the current key value
     axois
       .get(`https://api.nomics.com/v1/currencies/ticker?key=${API_KEY}`)
       .then((res) => {
@@ -22,6 +23,7 @@ function App() {
         alert("API error occurred!");
         console.log(err);
       });
+      */
   }, [setLoading]);
 
   const handleChange = (event) => {
